@@ -49,3 +49,28 @@ for (var i = 0; i < listaNomes.length; i++) {
     );
 }
 
+function adicionar() {
+    var exibirInserido = document.getElementById("js");
+    var jaExiste = document.getElementById("jaExiste").value;
+    var newNameMovie = document.getElementById("addNome").value;
+    var newLinkMovie = document.getElementById("addTrailer").value;
+    var newImageMovie = document.getElementById("addImagem").value;
+
+    if (newImageMovie.endsWith(".jpg")) {
+        listaNomes.push(newNameMovie);
+        listaLinks.push(newLinkMovie);
+        listaImagem.push(newImageMovie);
+        exibirInserido.innerHTML =
+            "<a target=_blank href=" +
+            listaLinks[listaLinks.length - 1] +
+            "><img class=imagem src= " +
+            listaImagem[listaImagem.length - 1] +
+            ">";
+    } else {
+        jaExiste.innerHTML = "Adicione uma imagem com .jpg no final";
+    }
+
+    document.getElementById("addNome").value = "";
+    document.getElementById("addTrailer").value = "";
+    document.getElementById("addImagem").value = "";
+}
