@@ -12,3 +12,13 @@ body {
     text-align: center;
     padding: 20px;
 }
+
+.page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+}
+
+.page-subtitle {
+    color: #ffffff;
+    margin-top: 5px;
+}
