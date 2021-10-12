@@ -1,0 +1,14 @@
+body {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    background-image: url("https://i.pinimg.com/originals/1f/a7/2f/1fa72f650fe5c00bfb40e353b08acd11.gif");
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
