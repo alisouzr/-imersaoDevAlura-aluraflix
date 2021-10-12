@@ -39,4 +39,13 @@ var listaImagem = [
     "https://uauposters.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/5/2/527120201013-uau-posters-star-wars-episode-ix-the-rise-of-skywalker-ascencao-2.jpg"
 ];
 
+for (var i = 0; i < listaNomes.length; i++) {
+    document.write(
+        "<a target=_blank href=" +
+        listaLinks[i] +
+        "><img src=" +
+        listaImagem[i] +
+        " class=imagem ></a>"
+    );
+}
 
